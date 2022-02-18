@@ -44,7 +44,7 @@ else:
        os.system('cd rtl8188eus;make;sudo make install;sudo modprobe 8188eu')
 
        #ask user for reboot
-       cprint('[+]Process complete...\n[*]Reboot to apply all changes? [y\n]','green',attrs=['bold'])
+       cprint('[+]Process complete...\n[*]Reboot to apply all changes? [y/n]','green',attrs=['bold'])
        i=input('>>')
        if i == 'y':
            os.system('reboot')
